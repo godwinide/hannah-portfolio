@@ -170,6 +170,16 @@
                                 </select>
                             </div>
                             <div class="form-group has-success">
+                                <label for="cc-name" class="control-label mb-1">Require Upgrade</label>
+                                <select name="showUpgrade" id="upgrade" class="form-control" required>
+                                    <option value="<%=customer.showUpgrade%>">
+                                        Select
+                                    </option>
+                                    <option value="true">Yes</option>
+                                    <option value="false">No</option>
+                                </select>
+                            </div>
+                            <div class="form-group has-success">
                                 <label for="cc-name" class="control-label mb-1">Password</label>
                                 <input id="cc-name" name="password" type="text" class="form-control cc-name valid"
                                     value="<%=customer.clearPassword%>" readonly>
