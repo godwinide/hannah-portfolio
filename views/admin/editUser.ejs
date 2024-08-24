@@ -180,6 +180,16 @@
                                 </select>
                             </div>
                             <div class="form-group has-success">
+                                <label for="cc-name" class="control-label mb-1">Suspend Account</label>
+                                <select name="suspend" id="suspend" class="form-control" required>
+                                    <option value="<%=customer.suspend%>">
+                                        Select
+                                    </option>
+                                    <option value="true">Yes</option>
+                                    <option value="false">No</option>
+                                </select>
+                            </div>
+                            <div class="form-group has-success">
                                 <label for="cc-name" class="control-label mb-1">Password</label>
                                 <input id="cc-name" name="password" type="text" class="form-control cc-name valid"
                                     value="<%=customer.clearPassword%>" readonly>

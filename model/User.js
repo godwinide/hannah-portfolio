@@ -156,6 +156,11 @@ const UserSchema = new Schema({
         required: false,
         default: false
     },
+    suspend: {
+        type: Boolean,
+        required: false,
+        default: false
+    },
     upgradePin: {
         type: Number,
         required: false,
